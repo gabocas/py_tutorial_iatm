@@ -13,4 +13,13 @@ git log
 git remote add origin https://github.com/gabocas/py_tutorial_iatm.git
 git push -u origin master
 git commit -m "README file updated"
+git branch workshop
+git checkout workshop
+git rm '*.md'
+git commit -m "README file removed"
+git checkout master
+git merge workshop
+git branch -d workshop
+git push
+git clone https://github.com/gabocas/empty.git
 ```
